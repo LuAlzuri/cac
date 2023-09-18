@@ -2,29 +2,31 @@ body{
     background-image: url(../images/fondo2.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: scroll;
+    background-attachment: fixed;
+    
 }
 
-/* Encabezado */
 .header{
-    position: sticky;
-    top:1rem;
-    height: 5rem;
-    padding: 2rem;
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 100vw;
+    height: 10vh;
     background-color: rgb(194, 183, 183);
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 2rem;
-    z-index: 1;
-
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    justify-content: center;
+    grid-gap: 100px;
+    z-index: 20;
 }
-.header > div,
-.header > a{
+.header > div{
+    position: relative;
+    top: 35%;
+    left: 100px;
     font-family: monospace;
     color: rgb(23, 76, 94);
     text-align: center;
-    font-size: 1rem;
+    font-size: 130%;
     height: 40px;
 }
 
@@ -46,8 +48,11 @@ a:active{
 }
 
 img{
+    position: relative;
     width: 50px;
     height: 50px;
+    left: -400%;
+    top:10%;
 }
 
 .ini{

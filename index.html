@@ -9,52 +9,61 @@
 </head>
 <body>
 
-        <header class="header">
-            <img src="images/escu.png" alt="Escudo de Buenos Aires" class="logo">
-            <a href="#inicio">Inicio</a>
-            <a href="#recorridos">Recorridos</a>
-            <a href="#reseñas">Reseñas</a>
-            <a href="#contacto">Contacto</a>        
-        </header>
+    <section class="header">
+        <img src="images/escu.png" alt="Escudo de buenos aires">
+        <div><a href="#inicio">Inicio</a></div>
+        <div><a href="#recorridos">Recorridos</a></div>
+        <div><a href="#reseñas">Reseñas</a></div>
+        <div><a href="#contacto">Contacto</a></div>        
+    </section>
 
-        <div id="inicio">
-            <h1>Inicio</h1>
-            <!-- Presentacion de la empresa -->
+    <br><br><br><br><br><br><br><br><br>
+    <div id="inicio">
+        <div class="ini">
+            <h1 class="textini">Inicio</h1>
         </div>
+    </div>
 
-        <div id="recorridos">
-            <h1>Recorridos</h1>
-
+    <br><br><br><br><br><br><br><br>
+    <div id="recorridos">
+        <div class="reco">
+            <h1 class="texreco">Recorridos</h1>
         </div>
+    </div>
 
-        <div id="reseñas">
-            <h1 >Recorridos</h1>
-            <!-- carrusel -->
+    <br><br><br><br><br><br><br><br><br>
+    <div id="reseñas">
+        <div class="reseña">
+            <h1 class="textrese">Recorridos</h1>
         </div>
+    </div>
 
 
-        <div id="contacto">
-            <h1>Contacto</h1>
+    <br><br><br><br><br><br><br><br><br>
+    <div id="contacto">
+        <div class="conta">
+            <h1 class="texcon">Contacto</h1><br><br><br>
         </div>
-        
-        <form class="formu">
-
-            <label for="firstame">Nombre</label>
-            <input id="firstname" type="text" required><br><br>
-            <label for="lastname">Apellido</label>
-            <input id="lastname" type="text"><br><br>
+    </div>
     
-            <label for="dni">Documento</label> 
-            <input type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==8) return false;" />
-            <br><br>
-    
-            <p>Dejanos unos comentarios</p>
-    
-            <textarea name="comment" id="" cols="30" rows="10" placeholder="Puede escribirnos aquí..."></textarea>
-            <br>
-            <input type="submit" value="Submit"> 
-            <input type="reset" value="Reset"> 
-        </form>
+    <form class="formu">
+
+        <label for="firstame">Nombre</label>
+        <input id="firstname" type="text" required><br><br>
+        <label for="lastname">Apellido</label>
+        <input id="lastname" type="text"><br><br>
+
+        <label for="dni">Documento</label> 
+        <input type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==8) return false;" />
+        <br><br>
+
+        <p>Dejanos unos comentarios</p>
+
+        <textarea name="comment" id="" cols="30" rows="10" placeholder="Puede escribirnos aquí..."></textarea>
+        <br>
+        <input type="submit" value="Submit"> 
+        <input type="reset" value="Reset"> 
+    </form>
         
 </body>
 </html>
