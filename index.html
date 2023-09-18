@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vive CABA</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <link rel="shortcut icon" href="images/bue.png" type="image/x-icon">
+</head>
+<body>
+
+        <header class="header">
+            <img src="images/escu.png" alt="Escudo de Buenos Aires" class="logo">
+            <a href="#inicio">Inicio</a>
+            <a href="#recorridos">Recorridos</a>
+            <a href="#reseñas">Reseñas</a>
+            <a href="#contacto">Contacto</a>        
+        </header>
+
+        <div id="inicio">
+            <h1>Inicio</h1>
+            <!-- Presentacion de la empresa -->
+        </div>
+
+        <div id="recorridos">
+            <h1>Recorridos</h1>
+
+        </div>
+
+        <div id="reseñas">
+            <h1 >Recorridos</h1>
+            <!-- carrusel -->
+        </div>
+
+
+        <div id="contacto">
+            <h1>Contacto</h1>
+        </div>
+        
+        <form class="formu">
+
+            <label for="firstame">Nombre</label>
+            <input id="firstname" type="text" required><br><br>
+            <label for="lastname">Apellido</label>
+            <input id="lastname" type="text"><br><br>
+    
+            <label for="dni">Documento</label> 
+            <input type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==8) return false;" />
+            <br><br>
+    
+            <p>Dejanos unos comentarios</p>
+    
+            <textarea name="comment" id="" cols="30" rows="10" placeholder="Puede escribirnos aquí..."></textarea>
+            <br>
+            <input type="submit" value="Submit"> 
+            <input type="reset" value="Reset"> 
+        </form>
+        
+</body>
+</html>
