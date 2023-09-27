@@ -137,6 +137,53 @@ b{
     transform: translate(-50%, -50%);
 }
 
+/* ---------- */
+.reco-cajas{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    top: 100px;
+    margin-left: 20%;
+    width: 60vw;
+}
+
+.reco-caja {
+    border-radius: 25px;
+    background-color: white;
+}
+
+.reco-caja > img {
+    position: unset;
+    width: 100%;
+    height: 400px;
+}
+
+.caja-1 > img {
+    content: url(/images/Recorridos/r1a.png);
+}
+
+.caja-1:hover > img {
+    content: url(/images/Recorridos/r1b.png);
+}
+
+.caja-2 > img {
+    content: url(/images/Recorridos/r2a.png);
+}
+
+.caja-2:hover > img {
+    content: url(/images/Recorridos/r2b.png);
+}
+
+.caja-3 > img {
+    content: url(/images/Recorridos/r3a.png);
+}
+
+.caja-3:hover > img {
+    content: url(/images/Recorridos/r3b.png);
+}
+
+/* ---------- */
+
 /*______________________________________________________*/
 
 .reseña{
