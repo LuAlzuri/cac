@@ -4,80 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vive CABA</title>
-    <link rel="stylesheet" href="styles/default.css">
+    <script src="/TPO/cac/js/script"></script>
     <link rel="shortcut icon" href="images/bue.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/default.css">
 </head>
 <body>
-    <div class="fotodefondo">
-        <section class="header">
-            <img src="images/escu.png" alt="Escudo de buenos aires">
-            <div><a href="#qsomos">Quienes Somos?</a></div>
-            <div><a href="#recorridos">Recorridos</a></div>
-            <div><a href="#reseñas">Reseñas</a></div>
-            <div><a href="#contacto">Contacto</a></div>        
-        </section>
+    
+    <section class="header">
+        <img src="images/escu.png" alt="Escudo de buenos aires">
+        <div><a href="#qsomos">Quienes Somos?</a></div>
+        <div><a href="#recorridos">Recorridos</a></div>
+        <div><a href="#reseñas">Reseñas</a></div>
+        <div><a href="#contacto">Contacto</a></div>        
+    </section>
 
-        <div id="qsomos">
-            <div class="ini">
-                <div class="item1">
-                    <h1 class="textini">Quienes somos?</h1>
-                    <p class="descripcion">
-                        En <b>Vive CABA</b>, nos enorgullece ser tu guía confiable y apasionada para explorar la cautivadora ciudad de Buenos Aires. Como expertos en turismo local, estamos comprometidos en brindarte una experiencia inolvidable mientras descubres todos los encantos que esta vibrante metrópolis tiene para ofrecer. Nuestros recorridos:
-                    </p>   
-                    <ul>
-                        <li>Recorrido Natural</li>
-                        <li>Recorrido Arquitectónico</li>
-                        <li>Recorrido Monumental</li>
-                    </ul>
-                </div>
-                
-                <div class="item2">
-                    <img src="images/125125.jpg" alt="fondo">
-                </div>
+    <div id="qsomos">
+        <div class="ini">
+            <div class="item1">
+                <h1 class="textini">Quienes somos?</h1>
+                <p class="descripcion">
+                    En <b>Vive CABA</b>, nos enorgullece ser tu guía confiable y apasionada para explorar la cautivadora ciudad de Buenos Aires. Como expertos en turismo local, estamos comprometidos en brindarte una experiencia inolvidable mientras descubres todos los encantos que esta vibrante metrópolis tiene para ofrecer. Nuestros recorridos son:
+                </p>   
+                <ul>
+                    <li>Recorrido Natural</li>
+                    <li>Recorrido Arquitectónico</li>
+                    <li>Recorrido Monumental</li>
+                </ul>
+            </div>
+            
+            <div class="item2">
+                <img src="images/125125.jpg" alt="fondo">
             </div>
         </div>
+    </div>
 
-        <br><br><br><br><br><br><br><br>
-        <div id="recorridos">
-            <div class="reco">
-                <h1 class="texreco">Recorridos</h1>
-            </div>
+    <br><br><br><br><br><br><br><br>
+    <div id="recorridos">
+        <div class="reco">
+            <h1 class="texreco">Recorridos</h1>
         </div>
+    </div>
 
-        <br><br><br><br><br><br><br><br><br>
-        <div id="reseñas">
-            <div class="reseña">
-                <h1 class="textrese">Recorridos</h1>
-            </div>
+    <br><br><br><br><br><br><br><br><br>
+    <div id="reseñas">
+        <div class="reseña">
+            <h1 class="textrese">Reseñas</h1>
         </div>
+    </div>
 
-
-        <br><br><br><br><br><br><br><br><br>
-        <div id="contacto">
-            <div class="conta">
-                <h1 class="texcon">Contacto</h1><br><br><br>
-            </div>
+    <br><br><br><br><br><br>
+    <form class="row g-3 bg-secondary">
+        <div class="col-md-6">
+          <label for="inputName" class="form-label text-light h5">Nombres</label>
+          <input type="text" class="form-control" id="inputName">
+        </div>
+        <div class="col-md-6">
+            <label for="inputLname" class="form-label text-light h5">Apellidos</label>
+            <input type="text" class="form-control" id="inputLname">
+          </div>
+        <div class="col-md-6">
+          <label for="inputTel" class="form-label text-light h5">Número tel</label>
+          <input type="text" maxlength="14" class="form-control" id="inputTel" placeholder="Numero de teléfono">
         </div>
         
-        <form class="formu">
+        
+        <div class="col-md-8">
+            <label for="inputEmail4" class="form-label text-light h5">Correo</label>
+            <input type="email" class="form-control" id="inputEmail4">
+        </div>
 
-            <label for="firstame">Nombre</label>
-            <input id="firstname" type="text" required><br><br>
-            <label for="lastname">Apellido</label>
-            <input id="lastname" type="text"><br><br>
+        <div class="col-md-6">
+            <label for="inputadult" class="form-label text-light h5">Adultos</label>
+            <input type="number" min="1" max="10" class="form-control" id="inputadult">
+          </div>
+        <div class="col-md-6">
+            <label for="inputChilds" class="form-label text-light h5">Niños</label>
+            <input type="number" min="1" max="10"  class="form-control" id="inputChilds">
+        </div>
 
-            <label for="dni">Documento</label> 
-            <input type="number" pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==8) return false;" />
-            <br><br>
+        <div class="col-md-8">
+            <label for="inputDate" class="form-label text-light h5">Fecha a recorrer</label>
+            <input type="date" class="form-control" id="inputDate">
+        </div>
 
-            <p>Dejanos unos comentarios</p>
+        <div class="col-md-6">
+            <p class="form-label text-light h5">Mensaje</p>
+            <textarea name="comment" style="resize: none;" id="Mensaje" cols="150" rows="10" placeholder="Puede escribirnos aquí..."></textarea>
+          </div>
 
-            <textarea name="comment" id="" cols="30" rows="10" placeholder="Puede escribirnos aquí..."></textarea>
-            <br>
-            <input type="submit" value="Submit"> 
-            <input type="reset" value="Reset"> 
-        </form>
-    </div>
+        <div class="col-12 m-2">
+          <button type="submit" class="btn btn-light">Enviar</button>
+        </div>
+      </form>
         
 </body>
 </html>
