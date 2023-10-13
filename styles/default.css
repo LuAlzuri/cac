@@ -1,24 +1,24 @@
 .fotodefondo{
-    background-image: url(/TPO/cac/images/fondo3.jpg);
-    background-repeat: no-repeat;
-    background-position: 36%;
+    background-image: url(../images/fondo3.jpg);
+    background-repeat: cover;
+    background-position: 20%;
     background-attachment: fixed;
-    height: 100%;
+    z-index: -1;
+    height: 100%s;
+    min-width: min(640px-100vw);
 }
 
 /*Encabezado, tamaños y posicionamiento*/
 .header{
-    position: fixed;
-    top:0;
-    right: 0;
-    width: 100vw;
-    height: 15vh;
+    position: sticky;
+
+    padding: 2rem;
     background-color: rgb(226, 226, 226);
     display: grid;
     grid-template-columns: repeat(5,auto);
     justify-content: center;
     grid-gap: 100px;
-    z-index: 20;
+    z-index: 1;
 }
 .header > div{
     position: relative;
@@ -70,15 +70,13 @@ a:active{
 /*Secciones*/
 /*Seccion: Inicio (quienes somos)*/
 .ini{
-    position: relative;
-    margin-top: 6%;
-    margin-left: 0%;
-    background-color: rgba(255, 255, 255, 0.589);
-    width: 100vw;
-    height: 85vh;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 3rem;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.589);
+    border-radius: 15px;
 }
 .textini{
     font-family: monospace;
@@ -102,7 +100,7 @@ b{
     font-family: sans-serif;
     font-size: 28px;
     margin-left: 10%;
-    list-style-image: url(/TPO/cac/images/icon.png);
+    list-style-image: url(../images/icon.png);
 }
 
 .item2>img{
@@ -229,17 +227,17 @@ b{
 }
 
 .formu{
-    position: relative;
-    top: 200px;
-    right: 200px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    display: flex;
+    flex-direction: column;
     color: rgb(27, 105, 84);
     background-color: white;
+    margin: 9rem;
+    padding: 2rem;
+    gap: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1,5rem;
     border-radius: 25px;
     border: rgb(27, 105, 84) solid 2px;
-    margin-left: 20%;
 }
 input[type=text]{
     width: 40vw;
