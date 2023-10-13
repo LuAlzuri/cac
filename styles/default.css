@@ -4,6 +4,78 @@ body{
 
 /* ____________________________________________Slideshow container___________________________ */
 
+/*Importanción de fuente*/
+
+@import url('https://fonts.googleapis.com/css2?family=Junge&display=swap');
+.reseña{
+    font-family: 'Junge', sans-serif;
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding: 50px 0;
+    background-color: #fff;
+}
+.reseña .slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 15px;
+
+}
+
+.slider p{
+    text-align: center;
+    font-weight: 450;
+    color: #333;
+    padding: 0 150px;
+
+}
+
+.slider .quote-icon{
+    font-size: 25px;
+    color: #333;
+}
+.slider .details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.details .name{
+        font-size: 15px;
+        font-weight: 550;
+        color: #171717;
+}
+.details .location{
+    font-size: 12px;
+    font-weight: 600;
+    color: #6a6a6a;
+}
+.details .stars{
+    font-size: 13px;
+    font-weight: 600;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(175, 182, 182, 0.882);
+}
+.reseña .image{
+    height: 165px;
+    width: 165px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
 /* ____________________________________________Slideshow container___________________________ */
 
 
@@ -201,16 +273,6 @@ b{
 
 /*______________________________________________________*/
 
-.reseña{
-    position: relative;
-    top: 100px;
-    border-radius: 25px;
-    background-color: white;
-    width: 60vw;
-    height: 100px;
-    text-align: center;
-    margin-left: 20%;
-}
 .textrese{
     top: 30%;
     font-family: monospace;
