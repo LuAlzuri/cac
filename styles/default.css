@@ -159,27 +159,27 @@ b{
 }
 
 .caja-1 > img {
-    content: url(/images/Recorridos/r1a.png);
+    content: url(/images/Recorridos/r1a.jpg);
 }
 
 .caja-1:hover > img {
-    content: url(/images/Recorridos/r1b.png);
+    content: url(/images/Recorridos/r1b.jpg);
 }
 
 .caja-2 > img {
-    content: url(/images/Recorridos/r2a.png);
+    content: url(/images/Recorridos/r2a.jpg);
 }
 
 .caja-2:hover > img {
-    content: url(/images/Recorridos/r2b.png);
+    content: url(/images/Recorridos/r2b.jpg);
 }
 
 .caja-3 > img {
-    content: url(/images/Recorridos/r3a.png);
+    content: url(/images/Recorridos/r3a.jpg);
 }
 
 .caja-3:hover > img {
-    content: url(/images/Recorridos/r3b.png);
+    content: url(/images/Recorridos/r3b.jpg);
 }
 
 /* ---------- */
