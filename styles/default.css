@@ -298,3 +298,43 @@ form{
     left: 20px;
     bottom: 20px;
 }
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#fff;
+}
+.social{
+    display:flex;
+    justify-content: center;
+    gap: .5rem;
+    padding: 1rem;
+}
+.social a{
+    position:relative;
+    width: 4rem;
+    height: 4rem;
+    background-color: #ccc;
+    border-radius: .5rem;
+    background-position: center;
+    background-size: 2.5rem;
+    background-repeat: no-repeat;
+}
+.social a:hover{
+    bottom:.3rem;
+    background-color: #eee;
+    background-size: 3.5rem;
+    box-shadow: 0 .2rem .5rem #333;
+}
+/* iconos redes sociales */
+.linkedin{
+    background-image: url("../images/social/linkedin.svg");
+
+}
+.github{
+    background-image: url("../images/social/github.svg");
+}
+.telegram{
+    background-image: url("../images/social/telegram.svg");
+}
