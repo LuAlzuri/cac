@@ -78,7 +78,23 @@ body{
 
 /* ____________________________________________Slideshow container___________________________ */
 
+#titulo{
+    padding-top: 100px;
+    margin-top: -100px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+}
 
+header>h1{
+    margin: 5% 10% 5% 15%;
+    width: 70vw;
+    height: 50vh;
+    background-color: blueviolet;
+    border: black solid 1px;
+    color: #fff;
+    text-align: center;
+    padding-top: 7%;
+}
 
 
 /*Encabezado, tamaños y posicionamiento*/
@@ -90,7 +106,7 @@ body{
     height: 15vh;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-columns: repeat(5,auto);
+    grid-template-columns: repeat(6,auto);
     justify-content: center;
     grid-gap: 100px;
     z-index: 2;
@@ -125,7 +141,7 @@ body{
 }
 
 a:link{
-    color: rgb(57, 36, 173);
+    color: rgb(9, 1, 53);
     text-decoration-line: underline;
     text-decoration-color: rgba(127, 221, 205, 0);
 }
@@ -136,7 +152,7 @@ a:visited{
     text-decoration-color: rgba(127, 221, 205, 0);
 }
 a:active{
-    color: rgb(57, 36, 173);
+    color: rgb(9, 1, 53);
     text-decoration-line: underline;
     text-decoration-color: rgba(127, 221, 205, 0);
 }
@@ -278,26 +294,13 @@ b{
 
 /*______________________________________________________*/
 
-.textrese{
-    top: 30%;
-    font-family: monospace;
-    color: rgb(27, 105, 84);
-    font-size: 40px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#contacto{
+    padding-top: 100px;
+    margin-top: -100px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
 }
-form{
-    border-radius: 10px;
-    border: solid rgb(27, 105, 84) 2px;
-    background-repeat: no-repeat;
-    width: 97vw;
-    position: relative;
-    left: 20px;
-    bottom: 20px;
-}
+
 /* footer */
 .footer{
     display: flex;

@@ -12,13 +12,18 @@
 </head>
 <body>
 <!-- Nav  -->
-    <section class="header">
+    <nav class="header">
         <img src="images/escu.png" alt="Escudo de buenos aires">
+        <div><a href="#titulo">Home</a></div>
         <div><a href="#qsomos">¿Quienes Somos?</a></div>
         <div><a href="#recorridos">Recorridos</a></div>
         <div><a href="#reseñas">Reseñas</a></div>
         <div><a href="#contacto">Contacto</a></div>        
-    </section>
+    </nav>
+<!--Home-->
+    <header id="titulo">
+        <h1>Vive Caba</h1>
+    </header>
 <!-- Sobre nosotros -->
     <div id="qsomos">
         <div class="ini">
@@ -41,31 +46,30 @@
     </div>
 <!-- recorridos -->
 <br><br><br>
-        <div id="recorridos">
-            <div class="reco">
-                <h1 class="texreco">Nuestros Recorridos</h1>
+    <div id="recorridos">
+        <div class="reco">
+            <h1 class="texreco">Nuestros Recorridos</h1>
+        </div>
+
+        <br>
+
+        <div class="reco-cajas">
+            <div class="reco-caja caja-1">
+                <img/>
+                <h2>Recorrido Natural</h2>
+                <p>Ver más</p>
             </div>
 
-            <br>
+            <div class="reco-caja caja-2">
+                <img/>
+                <h2>Recorrido Arquitectónico</h2>
+                <p>Ver más</p>
+            </div>
 
-            <div class="reco-cajas">
-                <div class="reco-caja caja-1">
-                    <img/>
-                    <h2>Recorrido Natural</h2>
-                    <p>Ver más</p>
-                </div>
-
-                <div class="reco-caja caja-2">
-                    <img/>
-                    <h2>Recorrido Arquitectónico</h2>
-                    <p>Ver más</p>
-                </div>
-
-                <div class="reco-caja caja-3">
-                    <img/>
-                    <h2>Recorrido Monumental</h2>
-                    <p>Ver más</p>
-                </div>
+            <div class="reco-caja caja-3">
+                <img/>
+                <h2>Recorrido Monumental</h2>
+                <p>Ver más</p>
             </div>
         </div>
     </div>
@@ -145,7 +149,7 @@
     </section>
 <!-- formulario -->
     <br><br><br><br><br><br>
-    <form class="row g-3 bg-secondary">
+    <form id="contacto" class="row g-3 bg-secondary m-5">
         <div class="col-md-6">
           <label for="inputName" class="form-label text-light h5">Nombres</label>
           <input type="text" class="form-control" id="inputName">
@@ -179,9 +183,9 @@
             <input type="date" class="form-control" id="inputDate">
         </div>
 
-        <div class="col-md-6">
-            <p class="form-label text-light h5">Mensaje</p>
-            <textarea name="comment" style="resize: none;" id="Mensaje" cols="150" rows="10" placeholder="Puede escribirnos aquí..."></textarea>
+        <div class="form-group text-light h5">
+            <label for="exampleFormControlTextarea1">Escribinos un mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
 
         <div class="col-12 m-2">
