@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vive CABA</title>
-    <script src="/TPO/cac/js/script"></script>
     <link rel="shortcut icon" href="images/bue.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/default.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles/default.css">
+    
 </head>
 <body>
 <!-- Nav  -->
@@ -76,77 +76,47 @@
 
         <br><br><br><br><br><br><br><br><br>
 <!-- Slider -->
-    <section class="container">
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active reseña">
-                <div class="slider">
-                    <img src="images/fondo1.jpg" alt="" class="image">
-                    <p>Me encantó esta experiencia. Fue como si un amigo me enseñara su ciudad, lleno de tips para ubicarme además de mucha información valiosa sobre esta linda ciudad.</p>
-            
-                    <i class="bx bxs-quote-alt-left quote-icon"></i>
-
-                    <div class="details"> 
-                        <span class="name">Sandra, 48 años</span>
-                        <span class="location">Cordoba (Argentina)</span>
-                        <span class="stars"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"></span>
-                    </div>
-                </div>
-                </div>
-                <div class="carousel-item reseña">
-                <div class="slider">
-                    <img src="images/fondo2.jpg" alt="" class="image">
-                    <p>Lu y Patri son guías espectaculares con pasión de compartir muchos conocimientos sobre Buenos Aires! Gran recorrido y muy informativo, definitivamente nos enseñó cosas sobre la ciudad que probablemente no habríamos conocido si no hubiéramos ido, ¡particularmente la increíble arquitectura mixta que hay por todas partes! ¡Hicimos este recorrido el primer día de nuestro viaje y fue una gran información para el resto de nuestra estancia!</p>
-            
-                    <i class="bx bxs-quote-alt-left quote-icon"></i>
-
-                    <div class="details"> 
-                        <span class="name">Justin, 27 años</span>
-                        <span class="location">Nuevo de Mexico (Estados Unidos)</span>
-                        <span class="stars"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"></span>
-                    </div>
-                </div>
-                </div>
-                <div class="carousel-item reseña">
-                <div class="slider">
-                    <img src="images/fondo3.jpg" alt="" class="image">
-                    <p>Muy buena disposición y amabilidad de Lautaro. Te ayuda a encontrar lugares que serían difíciles de descubrir por uno mismo. Muy recomendado!!</p>
-            
-                    <i class="bx bxs-quote-alt-left quote-icon"></i>
-
-                    <div class="details"> 
-                        <span class="name">Luis, 65 años</span>
-                        <span class="location">Neuquén (Argentina)</span>
-                        <span class="stars"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"></span>
-                    </div>
-                </div>
-                </div>
-                <div class="carousel-item reseña">
-                <div class="slider">
-                    <img src="images/fondo4.jpg" alt="" class="image">
-                    <p>Carla fue una guía excelente y amable. Aprenderás mucho sobre historia, viajes, estilos arquitectónicos, arte/ actuaciones de los lugares simbólicos en Buenos Aires. ¡La comida y las cafeterías son los puntos de bonificación! ¡Recomiendo encarecidamente que lo hagas en los primeros días a tu llegada!</p>
-            
-                    <i class="bx bxs-quote-alt-left quote-icon"></i>
-
-                    <div class="details"> 
-                        <span class="name">Noelia, 27 años</span>
-                        <span class="location">Ferrol (España)</span>
-                        <span class="stars"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"><img src="images/reseña/star-fill.svg" alt="estrella"></span>
-                    </div>
-                </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            </div>
+<div class="container">
+    <div class="testimonial-slider">
+        <button id="prevBtn" class="slider-btn"> <i class='bx bx-chevron-left' style='color:#a9a6a6' ></i></button>
+        <div class="testimonial">
+            <img src="images/reseña/perfil/perf1.jpg" alt="Imagen de perfil 1" class="perf">
+            <p>Me encantó esta experiencia. Fue como si un amigo me enseñara su ciudad, lleno de tips para ubicarme además de mucha información valiosa sobre esta linda ciudad.</p>
+            <img src="images/reseña/quote.svg" alt="Signo de cita">
+            <p class="author">- <span>Sandra, 48 años</span><br>Cordoba (Argetina) <br>
+            <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"></p>
         </div>
-    </section>
+        <div class="testimonial">
+            <img src="images/reseña/perfil/perf2.jpg" alt="Imagen de perfil 2" class="perf">
+            <p>Lu y Patri son guías espectaculares con pasión de compartir muchos conocimientos sobre Buenos Aires! Gran recorrido y muy informativo, definitivamente nos enseñó cosas sobre la ciudad que probablemente no habríamos conocido si no hubiéramos ido, ¡particularmente la increíble arquitectura mixta que hay por todas partes! ¡Hicimos este recorrido el primer día de nuestro viaje y fue una gran información para el resto de nuestra estancia!</p>
+            <img src="images/reseña/quote.svg" alt="Signo de cita">
+            <p class="author">-<span>José Antonio, 27 años</span> <br>>Nuevo Mexico (Estados Unidos) <br>
+                <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"></p>
+        </div>
+        <div class="testimonial">
+            <img src="images/reseña/perfil/perf3.jpg" alt="Imagen de perfil 3" class="perf">
+            <p> Carla fue una guía excelente y amable. Aprenderás mucho sobre historia, viajes, estilos arquitectónicos, arte/ actuaciones de los lugares simbólicos en Buenos Aires. ¡La comida y las cafeterías son los puntos de bonificación! ¡Recomiendo encarecidamente que lo hagas en los primeros días a tu llegada! </p>
+            <img src="images/reseña/quote.svg" alt="Signo de cita">
+            <p class="author"> -<span>Amelia, 27 años</span> <br>Ferrol (España) <br>
+            <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"></p>
+        </div>
+        <div class="testimonial">
+            <img src="images/reseña/perfil/perf4.jpg" alt="Imagen de perfil 3" class="perf">
+            <p> No quería morirme sin conocer la tierra de mis padres. Tuve muchas dudas de viajar solo, encontrar a la empresa fue un milagro para mi. No me arrepiento para nada de la decisión. Espero volver la próxima vez con mi esposa, estoy seguro que amará tanto como yo el recorrido natural ¡Sigan así!</p>
+            <img src="images/reseña/quote.svg" alt="Signo de cita">
+            <p class="author"> -<span>Jean, 30 años </span> <br>Burdeos (Francia) <br>
+            <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"></p>
+        </div>
+        <div class="testimonial">
+            <img src="images/reseña/perfil/perf5.jpg" alt="Imagen de perfil 3" class="perf">
+            <p>Muy buena disposición y amabilidad de Lautaro. Te ayuda a encontrar lugares que serían difíciles de descubrir por uno mismo. Muy recomendado!!</p>
+            <img src="images/reseña/quote.svg" alt="Signo de cita">
+            <p class="author"> -<span>Luis, 55 </span> <br>Neuquén (Argentina) <br>
+            <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"> <img src="images/reseña/star-fill.svg" alt="estrella"></p>
+        </div>
+        <button id="nextBtn" class="slider-btn"><i class='bx bx-chevron-right' style='color:#a9a6a6' ></i></button>
+    </div>
+</div>
 <!-- formulario -->
     <br><br><br><br><br><br>
     <form id="contacto" class="row g-3 bg-secondary m-5">
