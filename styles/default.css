@@ -1,7 +1,11 @@
 body{
     background-color: rgb(208, 218, 226);
 }
-
+/* Header */
+#titulo>img{
+    width:100vw;
+    max-height: min(90vh, 1400px);
+}
 /* ____________________________________________Slideshow container___________________________ */
 
 .container{
