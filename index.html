@@ -13,17 +13,37 @@
 <body>
 <!-- Nav  -->
     <nav class="header">
-        <img src="images/Fotosconlogo/LOGO REDONDO SOLO LETRAS.png" alt="Logo Redondo">
-        <div><a href="#titulo">Home</a></div>
-        <div><a href="#qsomos">¿Quienes Somos?</a></div>
-        <div><a href="#recorridos">Recorridos</a></div>
-        <div><a href="#reseñas">Reseñas</a></div>
-        <div><a href="#contacto">Contacto</a></div>        
+        <a href="#titulo">
+            <img id="logo" src="images/Fotosconlogo/LOGO REDONDO SOLO LETRAS.png" alt="Logo Redondo">
+        </a>
+        <a class="ancla" href="#titulo">Home</a>
+        <a class="ancla" href="#qsomos">¿Quienes Somos?</a>
+        <a class="ancla" href="#recorridos">Recorridos</a>
+        <a class="ancla" href="#reseñas">Reseñas</a>
+        <a class="ancla" href="#contacto">Contacto</a>      
     </nav>
+
+<!--Menu hamburguesa-->
+    <nav class="mobinav">
+        <input class="mobi" type="checkbox" id="menu">
+        <label for="menu"> ☰ </label>
+        <ul>
+          <li><a href="#titulo">Home</a></li>
+          <li><a href="#qsomos">¿Quienes Somos?</a></li>
+          <li><a href="#recorridos">Recorridos</a></li>
+          <li><a href="#reseñas">Reseñas</a></li>
+          <li><a href="#contacto">Contacto</a> </li>
+        </ul>
+    </nav>
+<!--Menu hamburguesa-->
+
 <!--Home-->
     <header id="titulo">
         <img src="images/Fotosconlogo/planetario3.jpg" alt="Planetario">    
     </header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Home</button> 
+
 <!-- Sobre nosotros -->
     <div id="qsomos">
         <div class="ini">

@@ -3,7 +3,7 @@ body{
 }
 /* Header */
 #titulo>img{
-    width:100vw;
+    width:99vw;
     max-height: min(90vh, 1400px);
 }
 /* ____________________________________________Slideshow container___________________________ */
@@ -110,50 +110,68 @@ header>h1{
     display: grid;
     grid-template-columns: repeat(6,auto);
     justify-content: center;
-    grid-gap: 100px;
+    align-items: center;
+    grid-gap: 5%;
     z-index: 2;
 }
 
-.header > div{
-    position: relative;
-    top: 45%;
-    left: 100px;
+.ancla{
     font-family: monospace;
     color: rgb(57, 36, 173);
-    text-align: center;
     font-size: 150%;
-    height: 40px;
 }
-.header>img{
-    position: relative;
-    width: 60px;
-    height: 70px;
-    left: -400%;
-    top:20%;
+#logo{
+    width: 7rem;
+    height: 7rem;
 }
 /*Encabezado, tamaños y posicionamiento*/
 
+/*Menu hamburguesa*/
+.mobinav{
+    display: none;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(187, 187, 187); /* Set a background color */
+  color: rgb(0, 0, 0); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+  color: aqua;
+}
 /*______________________________________________________*/
 
 /*Animacion de navBar*/
-.header>div:hover{
-    font-weight: 300;
+.ancla:hover{
+    font-weight: 600;
     transform: scale(1.1,1.2);
     border-bottom: 10%;
 }
 
-a:link{
+.ancla:link{
     color: rgb(9, 1, 53);
     text-decoration-line: underline;
     text-decoration-color: rgba(127, 221, 205, 0);
 }
 
-a:visited{
+.ancla:visited{
     color: rgb(9, 1, 53);
     text-decoration-line: underline;
     text-decoration-color: rgba(127, 221, 205, 0);
 }
-a:active{
+.ancla:active{
     color: rgb(9, 1, 53);
     text-decoration-line: underline;
     text-decoration-color: rgba(127, 221, 205, 0);
@@ -172,9 +190,11 @@ a:active{
     background-clip: content-box;
 }
 /*Con este pedacito de codigo, la navbar funciona correctamente*/
-.ini{
+
+.ini{   /*Caja de menu quienes somos*/
     margin: 1.5rem auto;
     max-width: min(1480px, 80vw);
+    height: 72vh;
     padding: 3rem;
     display: flex;
     flex-direction: row;
@@ -184,7 +204,7 @@ a:active{
     background-color: rgb(219, 200, 170);
 }
 .textini{
-    padding-top: 2rem;
+    padding-top: 1rem;
     font-family: monospace;
     color: rgb(27, 105, 84);
     font-size: 2.5rem;
@@ -196,20 +216,23 @@ b{
 }
 .descripcion{
     font-family: monospace;
-    font-size: 1.25rem;
+    font-size: 1.6rem;
     margin-top: -1%;
     margin-left: 1%;
+    margin-right:12%;
 }
 .item1>ul{
     font-family: sans-serif;
-    font-size: 1.25rem;
-    margin-left: 10%;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    margin-left: 5%;
+    margin-bottom: 1%;
     list-style-image: url(../images/icon.png);
 }
 
 .item2>img{
-    width:500px;
-    margin-top: 3rem;
+    width:670px;
+    margin-top: 8rem;
     border-radius: 25px;
 }
 /*Fin Seccion inicio*/
@@ -258,7 +281,7 @@ b{
 
 .reco-caja {
     border-radius: 25px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .reco-caja > img {
@@ -276,27 +299,27 @@ b{
 }
 
 .caja-1 > img {
-    content: url(/images/Recorridos/r1a.jpg);
+    content: url(/TPO/cac/images/Recorridos/r1a.jpg);
 }
 
 .caja-1:hover > img {
-    content: url(/images/Recorridos/r1b.jpg);
+    content: url(/TPO/cac/images/Recorridos/r1b.jpg);
 }
 
 .caja-2 > img {
-    content: url(/images/Recorridos/r2a.jpg);
+    content: url(/TPO/cac/images/Recorridos/r2a.jpg);
 }
 
 .caja-2:hover > img {
-    content: url(/images/Recorridos/r2b.jpg);
+    content: url(/TPO/cac/images/Recorridos/r2b.jpg);
 }
 
 .caja-3 > img {
-    content: url(/images/Recorridos/r3a.jpg);
+    content: url(/TPO/cac/images/Recorridos/r3a.jpg);
 }
 
 .caja-3:hover > img {
-    content: url(/images/Recorridos/r3b.jpg);
+    content: url(/TPO/cac/images/Recorridos/r3b.jpg);
 }
 
 /* ---------- */
@@ -465,4 +488,92 @@ b{
         padding: 0px 5px;
     }
     /* fin slider */
+}
+@media only screen and (max-width:384px) {
+    .header{
+        display: none;
+    }
+    /*Menu hamburguesa*/
+    .mobinav{
+        display: block;
+    }
+    ul{
+        display: none;
+      }
+      
+      .mobi:checked  ~ ul{
+        display:block;
+      }
+      .mobi {
+        display: none;
+      }  
+      
+      li {
+        display: block;
+        background: lightgrey;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        border-bottom: 1px solid rgb(208, 218, 226);
+      }
+    /*Menu hamburguesa*/
+    .ini{
+        width: 100%;
+    }
+    .textini{
+        margin-top: -18%;
+        text-align: center;
+        font-size: 150%;
+        text-shadow: 1px 1px rgba(46, 46, 46, 0.322);
+    }
+    .descripcion{
+        font-size: 104%;
+        margin-right: -17%;
+    }
+    .ini{
+        display: flexbox;
+        flex-direction: column;
+        height: 40%;
+    }
+    .item1 ul{
+        margin-top: 9%;
+        margin-bottom: -2%;
+        margin-left: -3%;
+        font-size: 120%;
+    }
+    .item2>img{
+        max-width: 107%;
+        height: 150%;
+        border-radius: 25px;
+        margin-top: -10%;
+        margin-bottom: -5%;
+    }
+    .reco-cajas{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+        gap: 10%;
+    }
+    .texreco{
+        font-size: 2rem;
+        margin-top: 4%;
+        margin-bottom: 5rem;
+        text-shadow: 1px 1px rgba(46, 46, 46, 0.973);
+    }
+    .reco{
+        margin-bottom: 4rem;
+        background-color: rgb(252, 252, 252);
+        height: 1%;
+    }
+    .reco-caja > img {
+        position: unset;
+        width: 100%;
+        height: 80%;
+    }
+    .reco-cajas div{
+        margin-top: 1%;
+        margin-bottom:25%;
+    }
+    
 }
