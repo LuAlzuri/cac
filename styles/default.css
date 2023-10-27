@@ -3,7 +3,7 @@ body{
 }
 /* Header */
 #titulo>img{
-    width:99vw;
+    width:100vw;
     max-height: min(90vh, 1400px);
 }
 /* ____________________________________________Slideshow container___________________________ */
@@ -104,11 +104,11 @@ header>h1{
     position: sticky;
     top:0;
     right: 0;
-    max-width: 100vw;
+    width: 100vw;
     height: 15vh;
     background-color: rgb(255, 255, 255);
     display: grid;
-    grid-template-columns: repeat(6,auto);
+    grid-template-columns: repeat(5,auto);
     justify-content: center;
     align-items: center;
     grid-gap: 5%;
@@ -121,8 +121,8 @@ header>h1{
     font-size: 150%;
 }
 #logo{
-    width: 7rem;
-    height: 7rem;
+    width: 5rem;
+    height: 5rem;
 }
 /*Encabezado, tamaños y posicionamiento*/
 
@@ -193,7 +193,7 @@ header>h1{
 
 .ini{   /*Caja de menu quienes somos*/
     margin: 1.5rem auto;
-    max-width: min(1480px, 80vw);
+    max-width: min(1480px, 90vw);
     height: 72vh;
     padding: 3rem;
     display: flex;
@@ -204,11 +204,12 @@ header>h1{
     background-color: rgb(219, 200, 170);
 }
 .textini{
-    padding-top: 1rem;
+    padding-top: .5rem;
+    margin-top: -4%;
     font-family: monospace;
     color: rgb(27, 105, 84);
     font-size: 2.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     text-shadow: 2px 2px rgba(46, 46, 46, 0.322);
 }
 b{
@@ -216,23 +217,34 @@ b{
 }
 .descripcion{
     font-family: monospace;
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     margin-top: -1%;
-    margin-left: 1%;
-    margin-right:12%;
+    margin-left: 2%;
+    margin-right: -30%;
 }
 .item1>ul{
     font-family: sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 5px;
-    margin-left: 5%;
-    margin-bottom: 1%;
+    margin-left: 0%;
+    margin-top: 0%;
     list-style-image: url(../images/icon.png);
 }
 
+.item1 li{
+    margin-bottom: 1%;
+}
+.item2{
+    width:424%;
+    height: 98%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 .item2>img{
-    width:670px;
-    margin-top: 8rem;
+    width:89%;
+    height: 88%;
+    margin-top: .75rem;
+    margin-left: 16%;
     border-radius: 25px;
 }
 /*Fin Seccion inicio*/
@@ -299,27 +311,27 @@ b{
 }
 
 .caja-1 > img {
-    content: url(/TPO/cac/images/Recorridos/r1a.jpg);
+    content: url(../images/Recorridos/r1a.jpg);
 }
 
 .caja-1:hover > img {
-    content: url(/TPO/cac/images/Recorridos/r1b.jpg);
+    content: url(../images/Recorridos/r1b.jpg);
 }
 
 .caja-2 > img {
-    content: url(/TPO/cac/images/Recorridos/r2a.jpg);
+    content: url(../images/Recorridos/r2a.jpg);
 }
 
 .caja-2:hover > img {
-    content: url(/TPO/cac/images/Recorridos/r2b.jpg);
+    content: url(../images/Recorridos/r2b.jpg);
 }
 
 .caja-3 > img {
-    content: url(/TPO/cac/images/Recorridos/r3a.jpg);
+    content: url(../images/Recorridos/r3a.jpg);
 }
 
 .caja-3:hover > img {
-    content: url(/TPO/cac/images/Recorridos/r3b.jpg);
+    content: url(../images/Recorridos/r3b.jpg);
 }
 
 /* ---------- */
@@ -488,8 +500,6 @@ b{
         padding: 0px 5px;
     }
     /* fin slider */
-}
-@media only screen and (max-width:384px) {
     .header{
         display: none;
     }
