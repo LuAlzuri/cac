@@ -429,6 +429,16 @@ label{
         padding: 0px 12px;
     }
     /* fin slider */
+    /* Nav */
+    .ancla{
+        font-family: monospace;
+        color: rgb(57, 36, 173);
+        font-size: 105%;
+    }
+    #logo{
+        width: 4rem;
+        height: 4rem;
+    }
     /* Quienes somos IFrame */
     .ini{
         flex-direction: column;
@@ -441,7 +451,23 @@ label{
         margin: 0;
         margin-left: 3rem;
     }
+    /* Recorridos */
+    .reco-cajas{
+        gap: 20px;
+    }
     
+    .reco-caja > img {
+        position: unset;
+        width: 80%;
+        height: 90%;
+        border-radius: 25px;
+    }
+    
+    .reco-caja > h2 {
+        padding: 1.5rem;
+        margin-bottom: 3rem ;
+        font-size: medium;
+    }
 
 }
 
