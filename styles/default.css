@@ -107,11 +107,11 @@ header>img{
     max-width: min(1480px, 90vw);
     padding: 4rem;
     display: flex;
-    flex-direction: row;
     gap: 3rem;
     border-radius: 25px;
     border: 1px solid rgb(27, 105, 84);
     background-color: rgb(252, 252, 252);
+    overflow: hidden;
 }
 .textini{
     padding-top: .5rem;
@@ -130,7 +130,6 @@ b{
     font-size: 1.25rem;
     margin-top: -1%;
     margin-left: 2%;
-    margin-right: -30%;
 }
 .item1>ul{
     font-family: monospace;
@@ -145,16 +144,15 @@ b{
     padding: .10rem;
 }
 .item2{
-    width:424%;
-    height: 98%;
+    width:100%;
+    height: 100%;
     margin-left: 1rem;
     margin-right: 1rem;
 }
 .item2>iframe{
-    width: 38rem;
-    height: 23.5rem;
-    margin-top: .75rem;
-    margin-left: 16%;
+    width: 29rem;
+    height: 19rem;
+    margin-top: 1.25rem;
     border-radius: 25px;
 }
 
@@ -385,6 +383,17 @@ label{
 
 /* Otras pantallas */
 
+/* Tuvimos problemas con IFrame, así que decimos hacer una pantalla especial para evitar le quiebre */
+@media (max-width:1270px){
+
+    .item2>iframe{
+        width: 23rem;
+        height: 15rem;
+        margin-top: 15%;
+        border-radius: 25px;
+    }
+    
+}
 
 @media (max-width:1060px) {
     /* Slider */
@@ -420,6 +429,20 @@ label{
         padding: 0px 12px;
     }
     /* fin slider */
+    /* Quienes somos IFrame */
+    .ini{
+        flex-direction: column;
+    }
+    
+    .item2>iframe{
+        width: 30rem;
+        height: 16rem;
+        border-radius: 25px;
+        margin: 0;
+        margin-left: 3rem;
+    }
+    
+
 }
 
 
@@ -459,8 +482,16 @@ label{
         padding: 0px 10px;
     }
      /*fin slider  */
+     .ini{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
 }
 
+/* Pantallas moviles */
 
 @media (max-width:480px) {
     #titulo,
