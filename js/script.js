@@ -129,4 +129,4 @@ formulario.addEventListener("submit", (e)=> {
     console.info("Formulario enviado correctamente.");
     pintarMensajeExito();
 })
-//Validación del form**************************************
+//Validación del form
