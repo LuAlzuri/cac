@@ -39,3 +39,94 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
+
+
+//Validación del form**************************************
+const formulario = document.getElementById("contacto");
+const userName = document.getElementById("inputName");
+const userEmail = document.getElementById("inputEmail4");
+const userLname = document.getElementById("inputLname");
+const userTel = document.getElementById("inputTel");
+
+const alertName = document.getElementById("alertName");
+const alertTel = document.getElementById("alertTel");
+const alertEmail = document.getElementById("alertEmail");
+const alertSucces = document.getElementById("alertSucces");
+const alertLname = document.getElementById("alertLname");
+
+const regUserName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/ ;
+const regUserEmail = /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/;
+
+function validarTel (){
+    let valueInt = parseInt(userTel.value);
+    if(!Number.isInteger(valueInt)){
+        return false;
+    }
+    else{
+        userTel.value = valueInt;
+        return true;
+    }
+}
+
+const pintarMensajeError = (errores) => {
+    errores.forEach(item => {
+        item.tipo.classList.remove('d-none');
+        item.tipo.textContent = item.msg;
+    });
+};
+
+const pintarMensajeExito = () => {
+    alertSucces.classList.remove('d-none');
+};
+
+formulario.addEventListener("submit", (e)=> {
+    e.preventDefault(); 
+    const errores = [];
+
+    if(!regUserName.test(userName.value) || !userName.value.trim())
+    {
+        userName.classList.add("is-invalid");
+        errores.push({
+            tipo: alertName,
+            msg: "Formato no válido, solo letras."
+        })
+    }else{
+        userName.classList.remove('is-invalid');
+        userName.classList.add('is-valid');
+        alertName.classList.add('d-none');
+    }
+    if(!regUserName.test(userLname.value) || !userLname.value.trim())
+    {
+      userLname.classList.add("is-invalid");
+        errores.push({
+            tipo: alertLname,
+            msg: "Formato no válido, solo letras."
+        })
+    }else{
+        userLname.classList.remove('is-invalid');
+        userLname.classList.add('is-valid');
+        alertLname.classList.add('d-none');
+    }
+
+    if(!regUserEmail.test(userEmail.value) || !userEmail.value.trim())
+    {
+        userEmail.classList.add('is-invalid');
+        errores.push({
+            tipo: alertEmail,
+            msg: "Escriba un correo valido"
+        })
+    }else{
+        userEmail.classList.remove('is-invalid');
+        userEmail.classList.add('is-valid');
+        alertEmail.classList.add('d-none');
+    }
+
+    if(errores.length!==0){
+        pintarMensajeError(errores);
+        return;
+    }
+
+    console.info("Formulario enviado correctamente.");
+    pintarMensajeExito();
+})
+//Validación del form**************************************
