@@ -191,7 +191,6 @@ b{
     font-size: 2.5rem;
     margin-bottom: 1rem;
     text-shadow: 2px 2px rgba(46, 46, 46, 0.322);
-    margin: 0;
 }
 
 /* ---------- */
@@ -443,6 +442,17 @@ label{
     .ini{
         flex-direction: column;
     }
+
+    .descripcion{
+        font-size: large;
+    }
+
+    .item1 li{
+        font-size: large;
+    }
+    .item1 img{
+        width: .75rem;
+    }
     
     .item2>iframe{
         width: 30rem;
@@ -453,12 +463,12 @@ label{
     }
     /* Recorridos */
     .reco-cajas{
-        gap: 20px;
+        gap: 2px;
     }
     
     .reco-caja > img {
         position: unset;
-        width: 80%;
+        width: 90%;
         height: 90%;
         border-radius: 25px;
     }
@@ -466,6 +476,10 @@ label{
     .reco-caja > h2 {
         padding: 1.5rem;
         margin-bottom: 3rem ;
+        font-size: medium;
+    }
+    /* form */
+    .h5{
         font-size: medium;
     }
 
@@ -508,10 +522,11 @@ label{
         padding: 0px 10px;
     }
      /*fin slider  */
-     .ini{
+    .ini{
         display: flex;
         flex-direction: column;
     }
+
 
 
 
@@ -603,7 +618,6 @@ label{
     }  
     
     .mobinav li {
-    
         padding-top:0.1rem;
         font-size: small;
     }
