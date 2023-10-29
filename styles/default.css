@@ -522,14 +522,56 @@ label{
         padding: 0px 10px;
     }
      /*fin slider  */
+
+     /* Nav */
+     .ancla{
+        font-family: monospace;
+        color: rgb(57, 36, 173);
+        font-size: 80%;
+    }
+    #logo{
+        width: 3.25rem;
+        height: 3.25rem;
+    }
+    /* ¿Quiene somos? */
+    .textini{
+        font-size: 2.25rem;
+    }
     .ini{
         display: flex;
         flex-direction: column;
     }
+    
+    .item2>iframe{
+        margin: 0 auto;
+        width: 20rem;
+    }
+    /* recorridos */
+    .movDiv{
+        display: block;
+    }
+    .reco-cajas{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: auto;
+        gap: .5rem;
+    }
+    .texreco{
+        font-size: 2.25rem;
 
-
-
-
+    }
+    .reco{
+        margin-bottom: 2.5rem;
+    }
+    .reco-caja > h2 {
+        padding: 2rem;
+        margin-bottom: 0rem ;
+        font-size: x-large;
+    }
+    .contact h2{
+        font-size: 2.25rem;
+    }
 }
 
 /* Pantallas moviles */
@@ -592,6 +634,7 @@ label{
         position: sticky;
         top: 0px;
         bottom: 0px;
+        z-index: 2;
         background: rgba(234, 240, 246, 0.838);
         margin: 0 !important;
         padding: .25rem;
