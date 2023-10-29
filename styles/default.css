@@ -586,7 +586,6 @@ label{
     /*Menu hamburguesa*/
     #menu{
         font-size: 1.55rem;
-
     }
     .mobinav{
         display: block;
@@ -620,6 +619,9 @@ label{
     .mobinav li {
         padding-top:0.1rem;
         font-size: small;
+    }
+    .mobinav a{
+        font-family: 'Montserrat';
     }
     /*Menu hamburguesa*/
     .ini{
