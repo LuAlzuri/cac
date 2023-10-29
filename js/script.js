@@ -2,6 +2,12 @@
 const testimonials = document.querySelectorAll('.testimonial');
 let indice = 0;
 
+// Precios de recorridos en dolares
+const recorridoNaturalEnDolares = 3
+const recorridoArquitectonicoEnDolares = 4
+const recorridoMonumentalEnDolares = 5
+
+
 function showTestimonial(index) {
     testimonials.forEach((testimonial, i) => {
         testimonial.style.display = i === index ? 'block' : 'none';
@@ -130,3 +136,25 @@ formulario.addEventListener("submit", (e)=> {
     pintarMensajeExito();
 })
 //Validación del form
+
+
+//API Dolar
+fetch("https://dolarapi.com/v1/dolares/blue")
+    .then(response => response.json())
+    .then(data => {
+        let dolarBlue = data.venta
+        let recorridoNatural = document.getElementById("recorrido-natural")
+        recorridoNatural.innerText = "Precio: $" + (dolarBlue * recorridoNaturalEnDolares)
+        let recorridoArquitectonico = document.getElementById("recorrido-arquitectonico")
+        recorridoArquitectonico.innerText = "Precio: $" + (dolarBlue * recorridoArquitectonicoEnDolares)
+        let recorridoMonumental = document.getElementById("recorrido-monumental")
+        recorridoMonumental.innerText = "Precio: $" + (dolarBlue * recorridoMonumentalEnDolares)
+    })
+    .catch(() => {
+        let recorridoNatural = document.getElementById("recorrido-natural")
+        recorridoNatural.innerText = "Consultar precio"
+        let recorridoArquitectonico = document.getElementById("recorrido-arquitectonico")
+        recorridoArquitectonico.innerText = "Consultar precio"
+        let recorridoMonumental = document.getElementById("recorrido-monumental")
+        recorridoMonumental.innerText = "Consultar precio"
+    })

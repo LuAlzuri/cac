@@ -218,7 +218,10 @@ b{
 }
 
 .reco-caja > p {
-    margin-left: 20px;
+    margin-top: -10px;
+    margin-left: 25px;
+    color: #248A88;
+    font-weight: 600;
 }
 
 .caja-1 > img {
