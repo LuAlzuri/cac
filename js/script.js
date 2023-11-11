@@ -48,93 +48,111 @@ function topFunction() {
 
 
 //Validación del form**************************************
-const formulario = document.getElementById("contacto");
+/*const formulario = document.getElementById("contacto");
 const userName = document.getElementById("inputName");
-const userEmail = document.getElementById("inputEmail4");
-const userLname = document.getElementById("inputLname");
+const userEmail = document.getElementById("inputEmail");
 const userTel = document.getElementById("inputTel");
-
-const alertName = document.getElementById("alertName");
-const alertTel = document.getElementById("alertTel");
-const alertEmail = document.getElementById("alertEmail");
-const alertSucces = document.getElementById("alertSucces");
-const alertLname = document.getElementById("alertLname");
+const adultos = document.getElementById("inputAdults");
+const childs = document.getElementById("inputChilds");
 
 const regUserName = /^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$/ ;
 const regUserEmail = /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/;
 
-function validarTel (){
-    let valueInt = parseInt(userTel.value);
-    if(!Number.isInteger(valueInt)){
-        return false;
-    }
-    else{
-        userTel.value = valueInt;
-        return true;
-    }
-}
-
-const pintarMensajeError = (errores) => {
-    errores.forEach(item => {
-        item.tipo.classList.remove('d-none');
-        item.tipo.textContent = item.msg;
-    });
-};
-
-const pintarMensajeExito = () => {
-    alertSucces.classList.remove('d-none');
-};
 
 formulario.addEventListener("submit", (e)=> {
     e.preventDefault(); 
-    const errores = [];
 
-    if(!regUserName.test(userName.value) || !userName.value.trim())
+    if(regUserName.test(userName.value) || userName.value.trim())
     {
-        userName.classList.add("is-invalid");
-        errores.push({
-            tipo: alertName,
-            msg: "Formato no válido, solo letras."
-        })
-    }else{
-        userName.classList.remove('is-invalid');
-        userName.classList.add('is-valid');
-        alertName.classList.add('d-none');
+        alert("Solo letras porfavor")
+        return
     }
-    if(!regUserName.test(userLname.value) || !userLname.value.trim())
-    {
-      userLname.classList.add("is-invalid");
-        errores.push({
-            tipo: alertLname,
-            msg: "Formato no válido, solo letras."
-        })
-    }else{
-        userLname.classList.remove('is-invalid');
-        userLname.classList.add('is-valid');
-        alertLname.classList.add('d-none');
+
+    /*if(!Number.isInteger(userTel) || Number.isInteger(adultos) || Number.isInteger(childs)){
+        alert("Solo Números")
+        return
     }
 
     if(!regUserEmail.test(userEmail.value) || !userEmail.value.trim())
     {
-        userEmail.classList.add('is-invalid');
-        errores.push({
-            tipo: alertEmail,
-            msg: "Escriba un correo valido"
-        })
-    }else{
-        userEmail.classList.remove('is-invalid');
-        userEmail.classList.add('is-valid');
-        alertEmail.classList.add('d-none');
+        alert("Porfavor colocar un correo válido")
     }
+    
+    console.info("Formulario enviado correctamente.");*/
 
-    if(errores.length!==0){
-        pintarMensajeError(errores);
-        return;
-    }
+    document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("contacto")
+          .addEventListener("submit", validarFormulario);
+      });
 
-    console.info("Formulario enviado correctamente.");
-    pintarMensajeExito();
-})
+      function validarFormulario(evento) {
+        evento.preventDefault(); // Evita que se envíe el formulario
+        var usuario = document.getElementById("usuario").value; //Tomamos los datos del form
+        var num = document.getElementById("num").value;     //Tomamos los datos del form
+        var mail = document.getElementById("correo").value;//Tomamos los datos del form
+        var adulto= document.getElementById("adulto").value;//Tomamos los datos del form
+        var niño= document.getElementById("niño").value;//Tomamos los datos del form
+        
+        const regMail = /^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$/; //Exp.Reg (correos)
+        const regNum = /^([0-9])*$/; //Expresiones regulares (Numeros)
+        let fechaHoy = new Date(new Date().setHours(0,0,0,0));
+        fecha = document.getElementById("fecha").value;//Tomamos los datos del form
+
+        //Con esto detectamos que no deje los campos VACIOS
+        if (usuario.length === 0 || 
+            num.length === 0 ||
+            mail.length === 0 ||
+            adulto.length === 0 ||
+            niño.length === 0) {
+          alert("Por favor, todos los campos son requeridos.");
+          return;
+        }
+        //Detectamos que se complete solo palabras
+        if(regNum.test(usuario)){
+            document.getElementById("usuario").style.border = "red 1px solid";
+            return;
+        }else{document.getElementById("usuario").style.border= "1px rgb(136, 136, 136) solid";}
+        //Detectamos que se complete solo numeros
+        if(!regNum.test(num)){
+            document.getElementById("num").style.border = "red 1px solid";
+            return;
+        }else{document.getElementById("num").style.border= "1px rgb(136, 136, 136) solid"}
+        //Solo correo
+        if(!regMail.test(mail) || !mail.trim()){
+            document.getElementById("correo").style.border = "red 1px solid";
+            return;
+        }else{document.getElementById("correo").style.border= "1px rgb(136, 136, 136) solid"}
+        //Solo num adultos
+        if(!regNum.test(adulto)){
+            document.getElementById("adulto").style.border = "red 1px solid";
+            return;
+        }else{document.getElementById("adulto").style.border= "1px rgb(136, 136, 136) solid"}
+        //Solo num Niños
+        if(!regNum.test(niño)){
+            document.getElementById("niño").style.border = "red 1px solid";
+            return;
+        }else{document.getElementById("niño").style.border= "1px rgb(136, 136, 136) solid"}
+        //Comparaciones de fechas con la actual.
+        if(new Date(fecha.split("-").join("/"))<=fechaHoy){
+            document.getElementById("fecha").style.border = "red 1px solid";
+            return;
+        }
+        else{
+            document.getElementById("fecha").style.border= "1px rgb(136, 136, 136) solid"
+        }
+
+        alert("Todos los datos se completaron con éxito. Nos estaremos comunicando."); //Esto se muestra al completar todo ok
+
+        document.getElementById("usuario").value = ""; //Esto borra los campos
+        document.getElementById("num").value = "";    //Esto borra los campos
+        document.getElementById("correo").value = "";
+        document.getElementById("adulto").value = "";
+        document.getElementById("niño").value = "";
+        document.getElementById("fecha").value = "";
+        document.getElementById("mensaje").value = "";
+      }
+
 //Validación del form
 
 

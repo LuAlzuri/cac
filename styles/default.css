@@ -320,25 +320,11 @@ b{
 
 
 /* ______________________ Diseño form________________________________ */
+.recuadro{
+    border: 1px black solid;
+}
 
-.contact{
-    max-width: min(1480px, 90vw);
-    margin: 3rem auto !important;
-    border-radius: 25px;
-    border: 1px solid rgb(27, 105, 84);
-    padding: 2.5rem;
-}
-.contact>h2{
-    font-family: monospace;
-    color: rgb(27, 105, 84);
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    text-shadow: 2px 2px rgba(46, 46, 46, 0.322);
-    margin: 0;
-}
-label{
-    color:#333 !important;
-}
+
 /* footer */
 .footer{
     display: flex;

@@ -148,58 +148,37 @@
         </div>
     </div>
 <!-- formulario -->
-    <div id="contacto">
-        <form  class="row g-3 bg-body m-5 contact">
-            <h2>¡Contactanos!</h2>
-            <hr>
-            <div class="col-md-6">
-                <label for="inputName" class="form-label h5">Nombres*</label>
-                <input type="text" required class="form-control" id="inputName" name="" title="Ingresá tu nombre" placeholder="Ingresá tu nombre/s">
-    
-                <p class="text-danger mb-2 d-none" id="alertName">Error</p>
-            </div>
-            <div class="col-md-6">
-                <label for="inputLname" class="form-label h5">Apellidos*</label>
-                <input type="text" required class="form-control" id="inputLname" name=""  title="Ingresá tu apellido" placeholder="Ingresá tu apellido/s">
-                <p class="text-danger mb-2 d-none" id="alertLname">Error</p>
-            </div>
-            <div class="col-md-6">
-                <label for="inputTel" class="form-label h5">Número telefono</label>
-                <input type="number" required class="form-control" id="inputTel" placeholder="Numero de teléfono" name="" title="Ingresá tu número de telefono">
-            </div>
-                    
-            <div class="col-md-8">
-                <label for="inputEmail4" class="form-label h5">Correo</label>
-                <input type="email"  class="form-control" id="inputEmail4" name="" title="Ingresá tu correo" placeholder="Ingresá tu correo">
-                <p class="text-danger mb-2 d-none" id="alertEmail">Error</p>
-            </div>
-    
-            <div class="col-md-6">
-                <label for="inputadult" class="form-label  h5">Adultos*</label>
-                <input type="number" required  class="form-control" id="inputadult" name="" title="Ingresá el numero de adultos" placeholder="0">
-            </div>
-            <div class="col-md-6">
-                <label for="inputChilds" class="form-label  h5">Niños*</label>
-                <input type="number" required  class="form-control" id="inputChilds" name="" title="¿Cuántos niños van?" placeholder="0">
-            </div>
-    
-            <div class="col-md-8">
-                <label for="inputDate" class="form-label  h5">Fecha a recorrer*</label>
-                <input type="date" required class="form-control" id="inputDate" name=""  title="Ingresá la fecha por la que querés consultar">
-            </div>
-    
-            <div class="form-group h5">
-                <label for="exampleFormControlTextarea1" class="h5">Escribinos un mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" title="Dejanos tu mensaje" placeholder="Hola, me interesa consultar por el recorrido monumental para xx xx xx fecha. Espero su respuesta."></textarea>
-            </div>
-    
-            <div class="col-12 m-2">
-                <button type="submit" class="btn btn-primary" title="Enviar">Enviar</button>
-            </div>
-    
-            <div class="alert alert-success col-md-6 mx-auto p-4 d-none" style="width: 250px;" id="alertSucces" >Mensaje enviado con éxito.</div>
-        </form>
-    </div>
+    <form action="/login.php" id="contacto">
+        <p> Nombre completo: 
+           <br><input class="recuadro" type="text" name="usuario" id="usuario"/><hr>
+        </p> 
+
+        <p>Número de teléfono: 
+            <br><input class="recuadro" type="text" name="num" id="num" /><hr>
+        </p>
+
+        <p> Correo: 
+            <br><input class="recuadro" type="text" name="correo" id="correo"/><hr>
+        </p> 
+
+        <p> Cantidad Adultos: 
+            <br><input class="recuadro" type="text" name="adulto" id="adulto"/><hr>
+        </p> 
+
+        <p> Cantidad Niños: 
+            <br><input class="recuadro" type="text" name="niño" id="niño"/><hr>
+        </p> 
+
+        <p> Fecha a recorrer: 
+            <br><input class="recuadro" type="date" name="fecha" id="fecha"/><hr>
+        </p> 
+
+        <p> Mensaje: 
+            <br><textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea><hr>
+        </p> 
+
+        <input type="submit" value="Entrar" />
+    </form>
     
 <!-- Footer -->
     <footer class="footer">
