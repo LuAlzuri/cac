@@ -323,8 +323,34 @@ b{
 .recuadro{
     border: 1px black solid;
 }
-
-
+#b-form{
+    background-color: rgb(255, 255, 255);
+    max-width: min(1480px, 90vw);
+    padding: 5rem;
+    margin: 0 auto;
+    border-radius: 25px;
+    border: 1px solid rgb(27, 105, 84);
+    margin-bottom: 1rem;
+}
+#contacto{
+    display: flex;
+    flex-direction: column;
+}
+#contacto >label{
+    padding-top: 1rem;
+    padding-bottom:.35rem ;
+}
+#contacto>textarea{
+    height: 5rem;
+    margin-bottom:1rem ;
+}
+#contacto > h1{
+    font-family: monospace;
+    color: rgb(27, 105, 84);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px rgba(46, 46, 46, 0.322);
+}
 /* footer */
 .footer{
     display: flex;

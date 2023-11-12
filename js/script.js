@@ -86,7 +86,7 @@ formulario.addEventListener("submit", (e)=> {
           .addEventListener("submit", validarFormulario);
       });
 
-      function validarFormulario(evento) {
+    function validarFormulario(evento) {
         evento.preventDefault(); // Evita que se envíe el formulario
         var usuario = document.getElementById("usuario").value; //Tomamos los datos del form
         var num = document.getElementById("num").value;     //Tomamos los datos del form
@@ -105,8 +105,8 @@ formulario.addEventListener("submit", (e)=> {
             mail.length === 0 ||
             adulto.length === 0 ||
             niño.length === 0) {
-          alert("Por favor, todos los campos son requeridos.");
-          return;
+            alert("Por favor, todos los campos son requeridos.");
+            return;
         }
         //Detectamos que se complete solo palabras
         if(regNum.test(usuario)){
@@ -151,7 +151,7 @@ formulario.addEventListener("submit", (e)=> {
         document.getElementById("niño").value = "";
         document.getElementById("fecha").value = "";
         document.getElementById("mensaje").value = "";
-      }
+    }
 
 //Validación del form
 

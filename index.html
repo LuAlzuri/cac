@@ -148,37 +148,42 @@
         </div>
     </div>
 <!-- formulario -->
-    <form action="/login.php" id="contacto">
-        <p> Nombre completo: 
-           <br><input class="recuadro" type="text" name="usuario" id="usuario"/><hr>
-        </p> 
+    <div id='b-form'>
+    <form action="https://formspree.io/f/mwkdzrzb" method="POST" id="contacto">
+        <h1>¡Contactanos!</h1>
+        <hr>
 
-        <p>Número de teléfono: 
-            <br><input class="recuadro" type="text" name="num" id="num" /><hr>
-        </p>
+        <label for="usuario">Ingrese nombre y apellido:</label>
+            <input class="recuadro" type="text" name="usuario" id="usuario" placeholder="Ingrese su nombre por favor" title="Ingresá tu nombre y apellido por favor"/>
+        
 
-        <p> Correo: 
-            <br><input class="recuadro" type="text" name="correo" id="correo"/><hr>
-        </p> 
+        <label for="num">Número de teléfono:</label> 
+            <input class="recuadro" type="text" name="num" id="num" placeholder="Ej: xxxx xxxx xxx xxxx" title="Ingresá tu número de telefono" />
+        
 
-        <p> Cantidad Adultos: 
-            <br><input class="recuadro" type="text" name="adulto" id="adulto"/><hr>
-        </p> 
+        <label for="correo">Correo:</label>  
+            <input class="recuadro" type="text" name="correo" id="correo" placeholder="Ej: xxxxxxxxxx@xxx.xxx" title="Ingresá tu correo de contacto"/>
+        
 
-        <p> Cantidad Niños: 
-            <br><input class="recuadro" type="text" name="niño" id="niño"/><hr>
-        </p> 
+        <label for="adulto">Cantidad Adultos:</label> 
+            <input class="recuadro" type="text" name="adulto" id="adulto" placeholder="XX"/>
+        
 
-        <p> Fecha a recorrer: 
-            <br><input class="recuadro" type="date" name="fecha" id="fecha"/><hr>
-        </p> 
+        <label for="niño">Cantidad Niños:</label> 
+            <input class="recuadro" type="text" name="niño" id="niño" placeholder="XX"/>
+        
 
-        <p> Mensaje: 
-            <br><textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea><hr>
-        </p> 
+        <label for="fecha">Fecha a recorrer:</label> 
+            <input class="recuadro" type="date" name="fecha" id="fecha" placeholder="XX/XX/XXXX"/>
+        
 
-        <input type="submit" value="Entrar" />
+        <label for="mensaje">Mensaje:</label> 
+            <textarea name="mensaje" id="mensaje" placeholder="Me interesaría obtener información sobre los recorridos, somos un grupo de x adultos..."></textarea>
+        
+
+        <button type="submit">Enviar información</button>
     </form>
+    </div>
     
 <!-- Footer -->
     <footer class="footer">
